@@ -1,0 +1,75 @@
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 10%, #fc575e 75%); 
+    border-radius: 5px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: #00CC99;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4vw;
+    transition: color 0.3s;
+}
+  
+#myBtn:hover {
+    background-color: rgb(156, 245, 223);
+    color: #02ac81;
+}
+
+
+.facebook {
+    color: white;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.facebook:hover {
+    color: #284fa3;
+}
+
+.instagram {
+    color: white;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.instagram:hover {
+    color: #E1306C;
+}
+
+.twitter {
+    color: white;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.linkedin {
+    color: white;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.linkedin:hover {
+    color: #0e76a8;
+}
