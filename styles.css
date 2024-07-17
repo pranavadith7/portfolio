@@ -426,3 +426,39 @@ section {
     }
   }
 }
+
+
+.about-content{
+  padding: 5% 5% 0% 5%;
+  text-align: justify;
+  line-height: 200%;
+  font-family: cursive;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0% 5% 5% 5%;
+  gap: 30px;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #444444;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.column-skills {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row-skills:after {
+  content: "";
+  display: table;
+  clear: both;
+}
