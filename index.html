@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pranav Adith S</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="fixed-content">
+                <img src="./images/hey.jpg" alt="alt" class="img" />
+                <h2>Pranav Adith S</h2>
+                <hr style="width: 75%" />
+                <!-- <div class="centered-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <span>email@example.com</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="contact-item">
+                            <div class="row">
+                                <i class="fas fa-phone"></i>
+                                <span>(123) 456-7890</span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="contact-item">
+                            <div class="row">
+                                <i class="fas fa-location-dot"></i>
+                                <span>Bangalore</span>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </div> -->
+                <div class="centered-content">
+                    <div class="contact-info">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-envelope"></i></td>
+                                <td></td>
+                                <td style="text-align: left">
+                                    <span>email@example.com</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-phone"></i></td>
+                                <td></td>
+                                <td style="text-align: left">
+                                    <span>(123) 456-7890</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><i class="fas fa-location-dot"></i></td>
+                                <td></td>
+                                <td style="text-align: left">
+                                    <span>Bangalore</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content" id="main-content">
+                <div class="container-nav">
+                    <div class="left">
+                        <h2 id="content-heading">About</h2>
+                    </div>
+                    <div class="right">
+                        <nav class="navbar">
+                            <ul class="nav-links">
+                                <li>
+                                    <a
+                                        href="#about"
+                                        onclick="showContent('about', 'About')"
+                                        >About</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#experience"
+                                        onclick="showContent('experience', 'Work Experience')"
+                                        >Work Experience</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#education"
+                                        onclick="showContent('education', 'Education')"
+                                        >Education</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#projects"
+                                        onclick="showContent('projects', 'Projects')"
+                                        >Project</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#achievements"
+                                        onclick="showContent('achievements', 'Achievements')"
+                                        >Achievement</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#contact"
+                                        onclick="showContent('contact', 'Contact')"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="about" class="content-section active">
+                    <p>Hey! This is Pranav Adith S.</p>
+                </div>
+                <div id="experience" class="content-section">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h3>Associate Software Engineer</h3>
+                                <br />
+                                <p>
+                                    Mindteck (Opentext Contract) (Sep 2023 -
+                                    Present)
+                                </p>
+                                <p>Project - VI Automation</p>
+                                <p>Skills - Python, Flow Automation, SQL</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h3>Software Development Intern</h3>
+                                <p>
+                                    Opentext (Microfocus) (Feb 2023 - Aug 2023)
+                                </p>
+                                <p>Data Center Automation</p>
+                                <p>Skills - Python, ReactJS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="education" class="content-section">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h3>Amrita Vishwa Vidyapeetham, Coimbatore</h3>
+                                <p>
+                                    B-Tech - Computer Science and Engineering
+                                    (2019 - 2023)
+                                </p>
+                                <p>CGPA - 8.33/10</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h3>The Lawrence School, Lovedale</h3>
+                                <p>
+                                    12<sup>th</sup> - Science Stream (2017 -
+                                    2019)
+                                </p>
+                                <p>
+                                    Physics, Chemistry, Mathematics, Computer
+                                    Science, English
+                                </p>
+                                <p>Percentage - 86.4%</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <div class="content">
+                                <h3>The Lawrence School, Lovedale</h3>
+                                <p>10<sup>th</sup> - (2015 - 2017)</p>
+                                <p>
+                                    Mathematics, Science, Social Science,
+                                    English, Tamil
+                                </p>
+                                <p>CGPA - 9.4/10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="content-section">
+                    <div class="projects">
+                        <section>
+                            <div class="container1">
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/quiz.jpg"
+                                                    alt="quiz"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://github.com/pranavadith7/Quiz-Application"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-github fa-lg"
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Quiz Application</h3>
+                                        <!-- <p><a href="https://ot-quiz-application.web.app/" style="color: white;">Web App Link</a></p> -->
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/telegram.png"
+                                                    alt="telegram_stocks_bot"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://t.me/assignmentbot_bot"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-telegram fa-xl"
+                                                            style="
+                                                                color: #ffffff;
+                                                            "
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Telegram Stocks Bot</h3>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/hydration.png"
+                                                    alt="research"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://www.researchgate.net/publication/375879731_Smartphone_based_skin_hydration_level_sensor_and_sunburn_prediction"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-researchgate fa-lg"
+                                                            style="
+                                                                color: #ffffff;
+                                                            "
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>
+                                            Smartphone based skin hydration
+                                            level sensor and sunburn prediction
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/chatbot.png"
+                                                    alt="chatbot"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://github.com/pranavadith7/ChatBot"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-github fa-lg"
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Cab Booking ChatBot</h3>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/publication.png"
+                                                    alt="publication"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://github.com/pranavadith7/Publication-Repository"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-brands fa-github fa-lg"
+                                                            style="
+                                                                color: #ffffff;
+                                                            "
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Faculty Publication Repository</h3>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-inner" style="--clr: #fff">
+                                        <div class="box">
+                                            <div class="imgBox">
+                                                <img
+                                                    src="./images/pharmacy.png"
+                                                    alt="publication"
+                                                />
+                                            </div>
+                                            <div class="icon">
+                                                <a
+                                                    href="https://pranavadith7.github.io/Pharmacy-Management-System/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    class="iconBox"
+                                                >
+                                                    <span
+                                                        class="material-symbols-outlined"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-link"
+                                                            style="
+                                                                color: #2082ba;
+                                                            "
+                                                        ></i> </span
+                                                ></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h3>Pharmacy Management System</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="achievements" class="content-section">
+                    <p>Achievements</p>
+                </div>
+                <div id="contact" class="content-section">
+                    <div class="contact-row">
+                        <div class="contact-column">
+                            <br />
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497700.11234854563!2d77.30125904795074!3d12.953790189328199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1717500706695!5m2!1sen!2sin"
+                                width="90%"
+                                height="400"
+                                style="border-radius: 10px"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        <div class="contact-column">
+                            <form action="">
+                                <div class="contact-form">
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            placeholder="Name"
+                                        />
+                                    </div>
+                                    <br /><br />
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Email"
+                                        />
+                                    </div>
+                                    <br /><br />
+                                    <div>
+                                        <textarea
+                                            name="message"
+                                            id="message"
+                                            rows="10"
+                                            placeholder="Message"
+                                        ></textarea>
+                                    </div>
+                                    <br /><br />
+                                    <div>
+                                        <input
+                                            type="submit"
+                                            id="submit"
+                                            value="Send"
+                                        />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
