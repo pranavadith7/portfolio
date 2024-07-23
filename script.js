@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var coll = document.getElementsByClassName("collapsible");
     for (var i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function () {
@@ -21,23 +21,29 @@ document.addEventListener("DOMContentLoaded", function() {
 const btn = document.getElementById('submit');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
 
-   btn.value = 'Sending...';
+        btn.value = 'Sending...';
 
-   const serviceID = 'service_f9ma0pd';
-   const templateID = 'template_tmsmmvc';
+        const serviceID = 'service_f9ma0pd';
+        const templateID = 'template_tmsmmvc';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send';
-      alert('Email Sent!');
-    }, (err) => {
-      btn.value = 'Send';
-      alert(JSON.stringify(err));
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send';
+                alert('Email Sent!');
+            }, (err) => {
+                btn.value = 'Send';
+                alert(JSON.stringify(err));
+            });
     });
+
+document.getElementById('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    this.reset();
 });
+
 
 document.getElementById("menu-icon").addEventListener("click", function () {
     var navbar = document.getElementById("navbar");
