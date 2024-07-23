@@ -723,14 +723,15 @@
                             ></iframe>
                         </div>
                         <div class="contact-column">
-                            <form action="">
-                                <div class="contact-form">
+                            <form id="form">
+                                <div class="contact-form field">
                                     <div>
                                         <input
                                             type="text"
                                             name="name"
                                             id="name"
                                             placeholder="Name"
+                                            required
                                         />
                                     </div>
                                     <br /><br />
@@ -740,6 +741,7 @@
                                             name="email"
                                             id="email"
                                             placeholder="Email"
+                                            required
                                         />
                                     </div>
                                     <br /><br />
@@ -749,6 +751,7 @@
                                             id="message"
                                             rows="10"
                                             placeholder="Message"
+                                            required
                                         ></textarea>
                                     </div>
                                     <br /><br />
@@ -767,5 +770,13 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+
+        <script type="text/javascript">
+            emailjs.init("WI3ySSkjCsSk_Msx9");
+        </script>
     </body>
 </html>

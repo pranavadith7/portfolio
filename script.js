@@ -18,6 +18,27 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const btn = document.getElementById('submit');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_f9ma0pd';
+   const templateID = 'template_tmsmmvc';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send';
+      alert('Email Sent!');
+    }, (err) => {
+      btn.value = 'Send';
+      alert(JSON.stringify(err));
+    });
+});
+
 document.getElementById("menu-icon").addEventListener("click", function () {
     var navbar = document.getElementById("navbar");
     navbar.classList.toggle("clicked");
