@@ -1,4 +1,24 @@
-document.getElementById("menu-icon").addEventListener("click", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active-achievement");
+            var content = this.nextElementSibling;
+            var icon = this.querySelector("i");
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.classList.remove("fa-arrow-down");
+                icon.classList.add("fa-arrow-right");
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.classList.remove("fa-arrow-right");
+                icon.classList.add("fa-arrow-down");
+            }
+        });
+    }
+});
+
+document.getElementById("menu-icon").addEventListener("click", function () {
     var navbar = document.getElementById("navbar");
     navbar.classList.toggle("clicked");
     var navLinks = navbar.querySelector(".nav-links");
